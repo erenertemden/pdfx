@@ -1,0 +1,25 @@
+# ---- GUI ----
+PyQt6>=6.6.0            # Modern PyQt GUI toolkit
+pyqt6-tools>=6.4.2.3.3  # Qt Designer and extra widgets (optional, dev use only)
+
+# ---- PDF Processing ----
+pikepdf>=9.0.0          # PDF manipulation (qpdf-based)
+PyPDF2>=3.0.0           # Additional PDF features (split, merge, metadata handling)
+qpdf>=10.6.3            # PDF optimization and linearization (if Python bindings available)
+ghostscript>=0.7        # Wrapper for Ghostscript (compression); requires gs binary installed
+pyexiftool>=0.5.6       # Python wrapper for ExifTool (metadata cleanup)
+
+# ---- CLI (optional) ----
+typer>=0.9.0            # Modern CLI argument parser (Click-based)
+
+# ---- API (optional, if you add FastAPI later) ----
+fastapi>=0.115.0        # Web API framework
+uvicorn>=0.30.0         # ASGI server for FastAPI
+
+# ---- Utilities ----
+rich>=13.7.0            # Rich logging, colored console output
+python-dotenv>=1.0.0    # Load environment variables from .env files
+
+# ---- Testing ----
+pytest>=8.0.0           # Unit testing
+pytest-qt>=4.2.0        # Testing utilities for PyQt
